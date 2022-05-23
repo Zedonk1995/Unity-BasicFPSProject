@@ -1,0 +1,12 @@
+.vs
+Library
+Logs
+obj
+Packages
+ProjectSettings
+Temp
+UserSettings
+Unity*
+.vsconfig
+Assembly*
+BasicFPSProject.sln
