@@ -8,6 +8,7 @@ public class MovementScript : MonoBehaviour
     public Vector3 directionOfPropulsion { get; set; }
 
     public float maxSpeed { get; set; } = 30.0f;
+    public float dragCoefficient { get; set; } = 10.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,6 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float dragCoefficient = 10.0f;
         Vector3 currentVelocity = myRigidBody.velocity;
 
         Vector3 resultantForce = dragCoefficient * (maxSpeed * directionOfPropulsion - currentVelocity);
